@@ -24,7 +24,7 @@ class _HomepageSlideState extends State<HomepageSlide> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 500.0, // Defina uma altura para o seu slider
+      height: 900.0, // Defina uma altura para o seu slider
       child: Stack(
         alignment: Alignment.bottomCenter,
         children: [
@@ -46,7 +46,7 @@ class _HomepageSlideState extends State<HomepageSlide> {
                     ),
                   );
                 },
-                child: Image.network(
+                child: Image.asset(
                     pacotes[index].homeWpp ,
                     fit: BoxFit.cover,
                   ),

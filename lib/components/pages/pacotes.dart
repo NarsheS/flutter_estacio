@@ -34,13 +34,13 @@ class PacotesScreen extends StatelessWidget {
                         ? PageView.builder(
                             itemCount: pacote.imagensUrl.length,
                             itemBuilder: (context, imageIndex) {
-                              return Image.network(
+                              return Image.asset(
                                 pacote.imagensUrl[imageIndex],
                                 fit: BoxFit.cover,
                               );
                             },
                           )
-                        : Image.network(
+                        : Image.asset(
                             pacote.imagensUrl.first,
                             height: 150.0,
                             fit: BoxFit.cover,

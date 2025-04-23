@@ -19,7 +19,7 @@ class DestinationDetailScreen extends StatelessWidget {
           children: [
             SizedBox(
               width: double.infinity,
-              child: Image.network(
+              child: Image.asset(
                 destination.imageUrl,
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) {

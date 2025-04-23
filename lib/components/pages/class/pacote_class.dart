@@ -59,7 +59,7 @@ class _DetalhesPacoteScreenState extends State<DetalhesPacoteScreen> {
                 controller: _pageController,
                 itemCount: widget.pacote.imagensUrl.length,
                 itemBuilder: (context, index) {
-                  return Image.network(
+                  return Image.asset(
                     widget.pacote.imagensUrl[index],
                     fit: BoxFit.cover,
                   );

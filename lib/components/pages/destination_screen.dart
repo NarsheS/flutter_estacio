@@ -21,7 +21,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
       description:
           'Um refúgio tranquilo com paisagens exuberantes, ideal para relaxar e aproveitar a natureza. Oferece atividades como trilhas, passeios a cavalo e piscina.',
       contact: '(35) 99999-8888',
-      imageUrl: 'images/destinos/deadopolis.jpg',
+      imageUrl: 'images/deadopolis.jpg',
     ),
     Destination(
       title: 'Camping Chapada dos Veadeiros',
@@ -30,7 +30,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
       description:
           'Aproveite a beleza natural da Chapada dos Veadeiros acampando em meio a cachoeiras e formações rochosas incríveis. Uma experiência única de contato com a natureza.',
       contact: '(62) 98888-7777',
-      imageUrl: 'images/destinos/camping.webp',
+      imageUrl: 'images/camping.webp',
     ),
     Destination(
       title: 'Pousada Beira Mar Porto de Galinhas',
@@ -39,7 +39,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
       description:
           'Localizada à beira-mar da famosa Porto de Galinhas, esta pousada oferece conforto e fácil acesso às piscinas naturais e praias paradisíacas.',
       contact: '(81) 97777-6666',
-      imageUrl: 'images/destinos/pgalinhas.jpg',
+      imageUrl: 'images/pgalinhas.jpg',
     ),
     Destination(
       title: 'Eco Lodge Amazônia Aventura',
@@ -48,7 +48,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
       description:
           'Explore a rica biodiversidade da Amazônia hospedando-se neste eco lodge sustentável. Desfrute de passeios de barco, observação de animais e trilhas na selva.',
       contact: '(92) 96666-5555',
-      imageUrl: 'images/destinos/amaz.jpg',
+      imageUrl: 'images/amaz.jpg',
     ),
     Destination(
       title: 'Refúgio Alpino Campos do Jordão',
@@ -57,7 +57,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
       description:
           'Desfrute do clima europeu em Campos do Jordão neste charmoso refúgio alpino. Ideal para casais e famílias que buscam tranquilidade e paisagens montanhosas.',
       contact: '(12) 95555-4444',
-      imageUrl: 'images/destinos/refugee.png',
+      imageUrl: 'images/refugee.png',
     ),
   ];
 
@@ -125,7 +125,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                       children: [
                         SizedBox(
                           height: 150,
-                          child: Image.network(
+                          child: Image.asset(
                             destination.imageUrl,
                             fit: BoxFit.cover,
                             errorBuilder: (context, error, stackTrace) {
